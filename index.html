@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Graça Soberana · 4ª Conferência Reformada do Marajó</title>
-<meta name="description" content="4ª Conferência Reformada do Marajó — Graça Soberana: a igreja debaixo da graça. 13, 14 e 15 de novembro de 2026, Breves/PA.">
+<title>Conferência Reformada do Marajó · Nos vemos em 2027</title>
+<meta name="description" content="Conferência Reformada do Marajó, Breves/PA. Veja como foi a 4ª edição (Graça Soberana, 2026) e seja um mantenedor da 5ª conferência, em 2027.">
 <meta property="og:title" content="Graça Soberana · Conferência Reformada do Marajó">
 <meta property="og:description" content="A igreja debaixo da graça. 13, 14 e 15 de novembro, Breves/PA.">
 <meta property="og:image" content="img/flyer.jpg">
-<meta name="theme-color" content="#2f5f63">
+<meta name="theme-color" content="#2f170d">
 <link rel="icon" href="img/favicon.png">
 <link rel="apple-touch-icon" href="img/icone.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script src="tracking.js"></script>
 </head>
@@ -21,37 +21,114 @@
 
 <header class="site-header">
   <nav class="wrap nav" aria-label="Principal">
-    <a class="logo" href="#topo" aria-label="Início"><img src="img/icone.png" alt=""></a>
+    <a class="logo" href="#topo" aria-label="Início"><img src="img/rosa-2027.png" alt=""></a>
     <button class="burger" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu"><span></span></button>
     <ul class="menu" id="menu">
-      <li><a href="#programacao">Programação</a></li>
+      <li><a href="#galeria">Galeria</a></li>
       <li><a href="#preletores">Preletores</a></li>
-      <li><a href="#local">Local</a></li>
+      <li><a href="#mantenedores">Mantenedores</a></li>
       <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#local">Local</a></li>
     </ul>
-    <a class="pill" href="inscricao.html">Inscreva-se</a>
+    <a class="pill" href="#mantenedores">Seja mantenedor</a>
   </nav>
 </header>
 
+<!-- Topo: o vídeo do anúncio da próxima edição cobre a tela inteira -->
 <section class="hero" id="topo">
-  <img class="watermark" src="img/rosa.png" alt="" aria-hidden="true">
-  <div class="wrap hero-grid">
-    <div class="hero-text">
-      <h1><img class="title" src="img/logo-conferencia.png" alt="Graça Soberana · a igreja debaixo da graça · 4ª Conferência Reformada do Marajó"></h1>
-      <p class="date"><strong>13, 14 e 15 de Novembro</strong> de 2026</p>
-      <p class="city">Breves — PA</p>
-      <a class="btn" href="inscricao.html">Quero me inscrever</a>
-      <div class="countdown" id="countdown" aria-label="Contagem regressiva">
-        <div><b data-u="d">--</b><span>dias</span></div>
-        <div><b data-u="h">--</b><span>horas</span></div>
-        <div><b data-u="m">--</b><span>min</span></div>
-        <div><b data-u="s">--</b><span>seg</span></div>
+  <video class="hero-video" id="heroVideo" autoplay muted loop playsinline preload="auto" poster="video/teaser-2027.jpg" aria-label="Vídeo de anúncio da 5ª Conferência Reformada do Marajó">
+    <source src="video/teaser-2027-720.mp4" type="video/mp4" media="(max-width: 760px)">
+    <source src="video/teaser-2027.mp4" type="video/mp4">
+  </video>
+  <div class="hero-shade" aria-hidden="true"></div>
+
+  <div class="wrap hero-inner">
+    <div class="hero-main">
+      <p class="hero-kicker"><img src="img/rosa-2027.png" alt="">5ª Conferência Reformada do Marajó</p>
+      <h1>Nos vemos<br>em 2027</h1>
+      <div class="hero-actions">
+        <a class="btn-hero" href="#mantenedores"><span class="dot" aria-hidden="true"></span>Seja um mantenedor</a>
+        <button class="som" id="som" type="button" aria-pressed="false">
+          <svg class="off" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5zM22 9l-6 6M16 9l6 6"/></svg>
+          <svg class="on" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5zM15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+          <span>Ouvir com som</span>
+        </button>
       </div>
     </div>
-    <div class="video" id="video" role="button" tabindex="0" aria-label="Assistir ao vídeo da conferência">
-      <img src="https://i.ytimg.com/vi/wGBurYHXr3Y/maxresdefault.jpg" onerror="this.src='https://i.ytimg.com/vi/wGBurYHXr3Y/hqdefault.jpg'" alt="">
-      <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+    <p class="hero-side-title">Breves — PA · 2027</p>
+  </div>
+
+  <div class="wrap hero-foot">
+    <a class="hero-down" href="#galeria" aria-label="Rolar para a galeria">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+    </a>
+    <p>Depois de quatro edições estudando os solas da Reforma, a <strong>5ª Conferência Reformada do Marajó</strong> já está sendo preparada. Data, programação e preletores serão anunciados em breve.</p>
+  </div>
+</section>
+
+<!-- Galeria: fotos da conferência de 2026 enquanto a programação de 2027 não está definida -->
+<section class="galeria" id="galeria">
+  <div class="wrap galeria-head">
+    <div>
+      <p class="eyebrow">Graça Soberana · 2026</p>
+      <h2>Como foi a 4ª conferência</h2>
+      <p class="galeria-sub">Três dias de pregação da Palavra, louvor e comunhão em Breves. A programação de 2027 será divulgada em breve.</p>
     </div>
+    <div class="galeria-nav">
+      <button type="button" data-dir="-1" aria-label="Fotos anteriores"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button type="button" data-dir="1" aria-label="Próximas fotos"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+  </div>
+  <div class="carrossel" id="carrossel" tabindex="0" aria-label="Fotos da 4ª Conferência Reformada do Marajó"></div>
+  <div class="wrap"><div class="carrossel-barra" aria-hidden="true"><span id="carrosselBarra"></span></div></div>
+</section>
+
+<!-- Preletores confirmados de 2027 -->
+<section class="dark" id="preletores">
+  <div class="wrap">
+    <p class="eyebrow">5ª Conferência · 2027</p>
+    <h2>Preletores confirmados</h2>
+    <div class="speakers">
+      <div class="sp"><img src="img/tiago-2027.jpg" alt="Pr. Tiago Santos" loading="lazy" width="600" height="740"><small>Pastor</small><h3>Tiago Santos</h3><p class="sp-igreja">Igreja Batista da Graça<br>São José dos Campos · SP</p></div>
+      <div class="sp"><img src="img/daniel-2027.jpg" alt="Pr. Daniel Gardner" loading="lazy" width="600" height="740"><small>Pastor</small><h3>Daniel Gardner</h3><p class="sp-igreja">Igreja Batista da Graça<br>São José dos Campos · SP</p></div>
+      <div class="sp"><img src="img/renato-2027.jpg" alt="Pr. Renato Vargens" loading="lazy" width="600" height="740"><small>Pastor</small><h3>Renato Vargens</h3><p class="sp-igreja">Igreja Cristã da Aliança<br>Niterói · RJ</p></div>
+      <div class="sp"><img src="img/isaias-2027.jpg" alt="Rev. Isaías Lima" loading="lazy" width="600" height="740"><small>Reverendo</small><h3>Isaías Lima</h3><p class="sp-igreja">Igreja Presbiteriana Central do Pará<br>Belém · PA</p></div>
+    </div>
+    <p class="sp-breve">Outros nomes serão anunciados em breve.</p>
+  </div>
+</section>
+
+<!-- Chamada para mantenedores -->
+<section class="mantenedores" id="mantenedores">
+  <div class="wrap mant-grid">
+    <div class="mant-text">
+      <p class="eyebrow-dark"><img src="img/icone.png" alt="">Mantenedores</p>
+      <h2>Ajude a manter a conferência de pé em 2027</h2>
+      <p>Cada edição da Conferência Reformada do Marajó só acontece porque irmãos e igrejas abraçam esta obra com suas orações e ofertas. Já começamos a preparar a 5ª edição, e queremos contar com você.</p>
+      <p>Como <strong>mantenedor</strong>, você contribui com o valor que puder, uma única vez ou todos os meses, para que o ensino fiel das Escrituras continue alcançando a igreja no Marajó.</p>
+
+      <ul class="mant-itens">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5V5a2 2 0 0 1 2-2h14v16H6.5A2.5 2.5 0 0 0 4 21.5v-2zM4 19.5A2.5 2.5 0 0 1 6.5 17H20M12 6v7M9.5 8.5h5"/></svg><div><b>Preletores</b>Passagens, hospedagem e cuidado com quem vem ministrar a Palavra.</div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M8 21h8M12 17v4"/></svg><div><b>Estrutura</b>Som, projeção e transmissão ao vivo das pregações.</div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg><div><b>Acolhimento</b>Alimentação, cafezinho e materiais para os participantes.</div></li>
+      </ul>
+
+      <blockquote>“Cada um contribua segundo propôs no seu coração; não com tristeza ou por necessidade, porque Deus ama ao que dá com alegria.”<cite>2 Coríntios 9.7</cite></blockquote>
+    </div>
+
+    <aside class="pix-card" aria-labelledby="pix-titulo">
+      <p class="pix-kicker">Contribua via PIX</p>
+      <img class="pix-qr" src="img/qr-pix.svg" alt="QR Code do PIX da Igreja Cristã Evangélica de Breves" width="200" height="200">
+      <h3 id="pix-titulo">Igreja Cristã Evangélica de Breves</h3>
+      <p class="pix-label">Chave PIX (CNPJ)</p>
+      <button class="pix-copiar" id="pixCopiar" type="button" data-chave="04317509000113">
+        <span>04.317.509/0001-13</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+      </button>
+      <p class="pix-ok" id="pixOk" role="status" aria-live="polite"></p>
+      <a class="btn mant-btn" href="https://ig.me/m/confreformadadomarajo" target="_blank" rel="noopener">Quero ser mantenedor</a>
+      <p class="pix-obs">Depois de contribuir, mande uma mensagem para a gente no Instagram <b>@confreformadadomarajo</b>.</p>
+    </aside>
   </div>
 </section>
 
@@ -83,12 +160,11 @@
    <div class="sobre-text">
     <div class="badge"><img src="img/rosa.png" alt=""></div>
     <h2>Sobre a conferência</h2>
-    <p>Em um tempo marcado por superficialidade espiritual, confusão doutrinária e enfraquecimento da centralidade do evangelho, convidamos você para a 4ª Conferência Reformada do Marajó, um encontro de proclamação fiel das Escrituras, comunhão cristã e fortalecimento da igreja do Senhor.</p>
-    <p>Com o tema “Graça Soberana”, nos reuniremos para contemplar a majestade de Deus na obra da redenção e a glória do evangelho que salva pecadores exclusivamente pela graça, mediante a fé, em Cristo somente.</p>
-    <p>Durante estes dias, seremos conduzidos ao estudo profundo das doutrinas da graça, reafirmando as verdades eternas reveladas nas Escrituras e preservadas pela tradição reformada histórica. Em um mundo que exalta a autonomia humana, queremos anunciar novamente a absoluta soberania de Deus na salvação, na história e na vida da igreja.</p>
-    <p>Cremos que a graça soberana não é apenas uma doutrina a ser estudada, mas uma verdade que humilha o pecador, exalta a Cristo e produz verdadeira adoração.</p>
+    <p>A Conferência Reformada do Marajó nasceu em 2023, em Breves, com um propósito simples: reunir a igreja do Senhor em torno da pregação fiel das Escrituras, da comunhão cristã e do ensino da fé reformada histórica.</p>
+    <p>Desde então, a cada edição nos debruçamos sobre uma das cinco grandes afirmações da Reforma Protestante: <em>Sola Scriptura</em>, <em>Sola Fide</em>, <em>Solus Christus</em> e, em 2026, <em>Sola Gratia</em>, com o tema “Graça Soberana”. Pastores e preletores de várias partes do Brasil já serviram a igreja aqui, e as pregações seguem disponíveis no YouTube da ICE Breves.</p>
+    <p>Em um tempo marcado por superficialidade espiritual e confusão doutrinária, queremos continuar anunciando a suficiência das Escrituras, a glória de Cristo e a soberania de Deus na salvação e na vida da igreja.</p>
     <blockquote>“Jamais conheceremos verdadeiramente a nós mesmos sem primeiro contemplarmos a face de Deus.”<cite>João Calvino</cite></blockquote>
-    <p>Nossa oração é que esta conferência fortaleça pastores, líderes, seminaristas e toda a igreja local, encorajando homens e mulheres a permanecerem firmes na Palavra, perseverantes na santidade e comprometidos com a glória de Deus.</p>
+    <p>A 5ª conferência já está sendo preparada para 2027, com o tema <strong>“Coram Deo: a vida inteira vivendo para a glória de Deus”</strong>. Nossa oração é que ela fortaleça pastores, líderes, seminaristas e toda a igreja local, encorajando homens e mulheres a permanecerem firmes na Palavra e a viverem cada área da vida diante da face de Deus. Data e preletores serão anunciados em breve.</p>
    </div>
 
    <aside class="historia" aria-labelledby="historia-titulo">
@@ -116,22 +192,25 @@
           <strong>Somente Cristo</strong>
           <span class="who">Pr. Mário Rubens · Pr. Tiago Santos</span></div>
       </li>
-      <li class="atual">
+      <li>
         <span class="ed">4ª</span>
-        <div><small>2026 · <em>Sola Gratia</em> · <b>esta edição</b></small>
+        <div><small>2026 · <em>Sola Gratia</em></small>
           <strong>Graça Soberana</strong>
-          <span class="ref">A igreja debaixo da graça</span></div>
+          <span class="ref">A igreja debaixo da graça</span>
+          <span class="who">Pr. David Riker · Pr. Judiclay Santos · Pr. Vinicius Musselman · Pr. Nildo Pinheiro · Pr. Afonso · Aline Musselman</span></div>
       </li>
-      <li class="futura">
+      <li class="atual">
         <span class="ed">5ª</span>
-        <div><small>2027</small>
-          <strong>Tema em breve</strong></div>
+        <div><small>2027 · <b>próxima edição</b></small>
+          <strong>Coram Deo</strong>
+          <span class="ref">A vida inteira vivendo para a glória de Deus</span></div>
       </li>
     </ol>
    </aside>
   </div>
 </section>
 
+<!-- PROGRAMAÇÃO 2026 (fora do ar até sair a de 2027)
 <section class="dark agenda" id="programacao">
   <div class="wrap">
     <h2>Programação</h2>
@@ -214,10 +293,12 @@
     </article>
   </div>
 </section>
+-->
 
-<section class="dark" id="preletores">
+<!-- PRELETORES 2026 (arquivo)
+<section class="dark" id="preletores-2026">
   <div class="wrap">
-    <h2>Preletores</h2>
+    <h2>Preletores de 2026</h2>
     <div class="speakers">
       <div class="sp"><img src="img/david-riker.jpg" alt="Pr. David Riker" loading="lazy"><small>Pastor</small><h3>David Riker</h3><button data-bio="david">Biografia ↗</button></div>
       <div class="sp"><img src="img/judiclay-santos.jpg" alt="Pr. Judiclay Santos" loading="lazy"><small>Pastor</small><h3>Judiclay Santos</h3><button data-bio="judiclay">Biografia ↗</button></div>
@@ -227,6 +308,7 @@
     </div>
   </div>
 </section>
+-->
 
 <section class="dark alt local" id="local">
   <div class="wrap">
@@ -278,6 +360,7 @@
   </div>
 </section>
 
+<!-- INSCRIÇÃO (volta depois, quando abrirem as inscrições de 2027)
 <section class="dark cta" id="inscricao">
   <div class="wrap">
     <h2>Inscreva-se</h2>
@@ -299,6 +382,7 @@
     </div>
   </div>
 </section>
+-->
 
 <footer>
   <img src="img/rosa.png" alt="">
@@ -313,7 +397,7 @@
       <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
       YouTube da ICE Breves</a>
   </div>
-  4ª Conferência Reformada do Marajó · Graça Soberana · Breves/PA
+  Conferência Reformada do Marajó · Breves/PA
 </footer>
 
 <!-- Botão flutuante do grupo do WhatsApp: aparece depois do topo e segue até o final da página -->
@@ -336,8 +420,6 @@
 
 <script>
 // ===== Edite aqui =====
-const DATA_EVENTO   = "2026-11-13T19:00:00-03:00"; // início do evento (horário de Breves)
-const VIDEO_ID      = "9xuoV57ldqM";               // vídeo do YouTube no topo da página
 const BIOS = {
   david:    ["Pr. David Riker",        "David Bowman Riker é pastor-presidente da Primeira Igreja Batista do Pará, em Belém, onde serve desde 2017. Doutor em Teologia, também é Mestre em Teologia Sistemática e Mestre em Divindade, tendo atuado como professor e reitor do Seminário Teológico Batista Equatorial. Seu ministério é marcado pelo ensino das Escrituras, pela formação teológica e pelo serviço à igreja local."],
   judiclay: ["Pr. Judiclay Santos",    "Judiclay Santos é pastor da Igreja Batista do Jardim Botânico, no Rio de Janeiro, e fundador da Editora e do Ministério Pro Nobis. É mestre em Teologia, com ênfase em Teologia Histórica pelo CPAJ, além de professor no Seminário Martin Bucer. Seu ministério é marcado pela pregação bíblica e pelo compromisso com a fé reformada."],
@@ -427,7 +509,7 @@ folha.addEventListener('touchcancel', soltarFolha);
 
 // No toque não existe "passar o mouse": vídeo e fotos dos preletores reagem ao chegar no meio da tela
 const noCentro = new IntersectionObserver(entradas => entradas.forEach(en => en.target.classList.toggle('in-view', en.isIntersecting)), { rootMargin: '-38% 0px -38% 0px' });
-document.querySelectorAll('.video, .sp').forEach(el => noCentro.observe(el));
+document.querySelectorAll('.sp').forEach(el => noCentro.observe(el));
 
 // Efeitos de rolagem do celular: a linha do tempo se preenche e a data de cada dia fica presa no topo
 const linha = document.querySelector('.timeline');
@@ -465,25 +547,68 @@ const waGrupo = document.getElementById('waGrupo');
 new IntersectionObserver(([en]) => waGrupo.classList.toggle('show', !en.isIntersecting))
   .observe(document.getElementById('topo'));
 
-const video = document.getElementById('video');
-function playVideo() {
-  if (video.classList.contains('playing')) return;
-  video.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${VIDEO_ID}?autoplay=1&rel=0" title="Vídeo da conferência" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`;
-  video.classList.add('playing');
-}
-video.addEventListener('click', playVideo);
-video.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && !video.classList.contains('playing')) { e.preventDefault(); playVideo(); } });
+// Cabeçalho: vidro transparente sobre o vídeo; fica escuro depois que o topo sai da tela
+const topo = document.getElementById('topo');
+new IntersectionObserver(([en]) => cabecalho.classList.toggle('solid', !en.isIntersecting), { rootMargin: '-70px 0px 0px 0px' }).observe(topo);
 
-const alvo = new Date(DATA_EVENTO).getTime();
-const cd = document.getElementById('countdown');
-function tick() {
-  const diff = alvo - Date.now();
-  if (diff <= 0) { cd.innerHTML = '<p style="font-weight:700">A conferência começou!</p>'; return; }
-  const v = { d: Math.floor(diff / 864e5), h: Math.floor(diff / 36e5) % 24, m: Math.floor(diff / 6e4) % 60, s: Math.floor(diff / 1e3) % 60 };
-  for (const k in v) cd.querySelector(`[data-u="${k}"]`).textContent = String(v[k]).padStart(2, '0');
-  setTimeout(tick, 1000);
+// Vídeo do topo: começa mudo (exigência dos navegadores); o botão liga o som e recomeça do início
+const heroVideo = document.getElementById('heroVideo');
+const som = document.getElementById('som');
+if (semAnimacao) { heroVideo.removeAttribute('autoplay'); heroVideo.pause(); }
+som.addEventListener('click', () => {
+  const ligar = heroVideo.muted;
+  heroVideo.muted = !ligar;
+  if (ligar) { heroVideo.currentTime = 0; heroVideo.play(); }
+  som.setAttribute('aria-pressed', ligar);
+  som.querySelector('span').textContent = ligar ? 'Desligar som' : 'Ouvir com som';
+});
+// pausa quando o topo sai da tela (economiza bateria e dados no celular)
+new IntersectionObserver(([en]) => {
+  if (en.isIntersecting) { if (!semAnimacao || !heroVideo.muted) heroVideo.play().catch(() => {}); }
+  else heroVideo.pause();
+}).observe(topo);
+
+// Carrossel de fotos da conferência de 2026
+const FOTOS = 18;
+const carrossel = document.getElementById('carrossel');
+carrossel.innerHTML = Array.from({ length: FOTOS }, (_, i) =>
+  `<figure class="foto"><img src="img/galeria/${String(i + 1).padStart(2, '0')}.jpg" alt="Foto ${i + 1} da 4ª Conferência Reformada do Marajó" loading="${i < 5 ? 'eager' : 'lazy'}" width="720" height="1280"></figure>`).join('');
+const barra = document.getElementById('carrosselBarra');
+const passo = () => carrossel.querySelector('.foto').getBoundingClientRect().width + parseFloat(getComputedStyle(carrossel).columnGap || 0);
+function rolarCarrossel(dir) {
+  const fim = carrossel.scrollLeft + carrossel.clientWidth >= carrossel.scrollWidth - 4;
+  if (dir > 0 && fim) carrossel.scrollTo({ left: 0, behavior: 'smooth' });
+  else carrossel.scrollBy({ left: dir * passo(), behavior: 'smooth' });
 }
-tick();
+document.querySelectorAll('.galeria-nav button').forEach(b => b.addEventListener('click', () => { rolarCarrossel(+b.dataset.dir); pausarAuto(); }));
+carrossel.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); rolarCarrossel(e.key === 'ArrowRight' ? 1 : -1); pausarAuto(); }
+});
+carrossel.addEventListener('scroll', () => {
+  const max = carrossel.scrollWidth - carrossel.clientWidth;
+  const vis = carrossel.clientWidth / carrossel.scrollWidth;
+  barra.style.width = (vis * 100) + '%';
+  barra.style.transform = `translateX(${max > 0 ? (carrossel.scrollLeft / max) * (1 / vis - 1) * 100 : 0}%)`;
+}, { passive: true });
+carrossel.dispatchEvent(new Event('scroll'));
+// avança sozinho a cada 4 s enquanto está na tela; para quando a pessoa mexe nele
+let autoTimer = null, autoPausado = false, visivel = false;
+function ligarAuto() { clearInterval(autoTimer); if (visivel && !autoPausado && !semAnimacao) autoTimer = setInterval(() => rolarCarrossel(1), 4000); }
+function pausarAuto() { autoPausado = true; clearInterval(autoTimer); setTimeout(() => { autoPausado = false; ligarAuto(); }, 10000); }
+['pointerdown', 'wheel', 'touchstart'].forEach(ev => carrossel.addEventListener(ev, pausarAuto, { passive: true }));
+carrossel.addEventListener('mouseenter', () => clearInterval(autoTimer));
+carrossel.addEventListener('mouseleave', ligarAuto);
+new IntersectionObserver(([en]) => { visivel = en.isIntersecting; ligarAuto(); }).observe(carrossel);
+
+// Copiar a chave PIX
+const pixBtn = document.getElementById('pixCopiar');
+const pixOk = document.getElementById('pixOk');
+pixBtn.addEventListener('click', async () => {
+  try { await navigator.clipboard.writeText(pixBtn.dataset.chave); pixOk.textContent = 'Chave PIX copiada!'; }
+  catch { pixOk.textContent = 'CNPJ: ' + pixBtn.dataset.chave; }
+  pixBtn.classList.add('copiado');
+  setTimeout(() => { pixBtn.classList.remove('copiado'); pixOk.textContent = ''; }, 3000);
+});
 </script>
 </body>
 </html>
