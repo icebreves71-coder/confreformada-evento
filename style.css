@@ -602,3 +602,6 @@ blockquote cite{font-family:Sora,system-ui,sans-serif}
   .hero-actions{flex-wrap:nowrap;gap:8px}
   .btn-hero,.som{padding:10px 12px;font-size:13px;white-space:nowrap}
 }
+
+/* as fotos têm width/height no HTML: sem isto a altura ficava presa em 740px */
+.sp img{height:auto}
