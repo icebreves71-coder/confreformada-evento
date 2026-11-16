@@ -36,16 +36,21 @@
 
 <!-- Topo: o vídeo do anúncio da próxima edição cobre a tela inteira -->
 <section class="hero" id="topo">
-  <video class="hero-video" id="heroVideo" autoplay muted loop playsinline preload="auto" poster="video/teaser-2027.jpg" aria-label="Vídeo de anúncio da 5ª Conferência Reformada do Marajó">
-    <source src="video/teaser-2027-720.mp4" type="video/mp4" media="(max-width: 760px)">
-    <source src="video/teaser-2027.mp4" type="video/mp4">
-  </video>
+  <video class="hero-video" id="heroVideo" autoplay muted loop playsinline preload="auto" aria-label="Vídeo de anúncio da 5ª Conferência Reformada do Marajó"></video>
+  <script>
+  // celular em pé: versão story (9:16); telas largas: versão 16:9
+  (function () {
+    var v = document.getElementById('heroVideo');
+    var story = matchMedia('(max-width: 760px) and (orientation: portrait)').matches;
+    v.poster = story ? 'video/teaser-2027-story.jpg' : 'video/teaser-2027.jpg';
+    v.src = story ? 'video/teaser-2027-story.mp4' : 'video/teaser-2027.mp4';
+  })();
+  </script>
   <div class="hero-shade" aria-hidden="true"></div>
 
   <div class="wrap hero-inner">
     <div class="hero-main">
-      <p class="hero-kicker"><img src="img/rosa-2027.png" alt="">5ª Conferência Reformada do Marajó</p>
-      <h1>Nos vemos<br>em 2027</h1>
+      <h1 class="sr-only">5ª Conferência Reformada do Marajó · Nos vemos em 2027</h1>
       <div class="hero-actions">
         <a class="btn-hero" href="#mantenedores"><span class="dot" aria-hidden="true"></span>Seja um mantenedor</a>
         <button class="som" id="som" type="button" aria-pressed="false">

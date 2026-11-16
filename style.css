@@ -587,3 +587,18 @@ blockquote cite{font-family:Sora,system-ui,sans-serif}
 .sp-breve{margin-top:40px;font-size:14px;font-style:italic;opacity:.7}
 @media (max-width:1000px){.speakers .sp{flex-basis:calc((100% - 28px)/2);max-width:300px}}
 @media (max-width:640px){.speakers .sp{flex-basis:calc((100% - 16px)/2)}.sp-igreja{font-size:12px}}
+
+/* Topo só com o vídeo: título apenas para leitores de tela; botões descem para a base */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.hero{padding-bottom:calc(22px + env(safe-area-inset-bottom,0px))}
+.hero-actions{margin-top:0}
+.hero-inner{padding-bottom:14px}
+.hero-foot{padding-top:14px}
+
+/* Celular em pé (vídeo story): só os botões na base, sem cobrir as legendas do vídeo */
+@media (max-width:760px) and (orientation:portrait){
+  .hero-side-title,.hero-foot{display:none}
+  .hero-inner{border-bottom:0;padding-bottom:0}
+  .hero-actions{flex-wrap:nowrap;gap:8px}
+  .btn-hero,.som{padding:10px 12px;font-size:13px;white-space:nowrap}
+}
